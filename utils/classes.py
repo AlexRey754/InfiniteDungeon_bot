@@ -1,5 +1,5 @@
 import random
-import re
+
 
 class Enemy:
     def __init__(self,name,hp,min_dmg,max_dmg,deffence,item,drop_chance) -> None:

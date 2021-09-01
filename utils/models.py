@@ -1,5 +1,4 @@
-from enum import unique
-from warnings import catch_warnings
+
 from peewee import *
 
 db = SqliteDatabase('db.db')
