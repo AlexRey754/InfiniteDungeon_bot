@@ -12,6 +12,9 @@ class BaseModel(Model):
 class Player(BaseModel):
     
     name = CharField()
-    
+    lvl = IntegerField()
+    skill_points = IntegerField()
+    current_xp = IntegerField()
+    max_xp = IntegerField()
 
 
