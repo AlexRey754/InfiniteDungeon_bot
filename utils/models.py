@@ -10,12 +10,14 @@ class BaseModel(Model):
 
     class Meta:
         database = db
+        order_by = 'id'
+
 
 class Player(BaseModel):
     
     name = CharField()
     lvl = IntegerField()
-    skill_points = IntegerField()
+    sp = IntegerField()
     current_xp = IntegerField()
     max_xp = IntegerField()
 
@@ -29,6 +31,7 @@ class Inventory(BaseModel):
 class Achievement(BaseModel):
 
     name = CharField()
+
 
 class Equipment(BaseModel):
 
