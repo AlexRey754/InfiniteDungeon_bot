@@ -16,7 +16,10 @@ class BaseModel(Model):
 class Player(BaseModel):
     
     name = CharField()
+    curr_hp = IntegerField()
+    max_hp = IntegerField()
     lvl = IntegerField()
+    money = IntegerField()
     sp = IntegerField()
     current_xp = IntegerField()
     max_xp = IntegerField()
