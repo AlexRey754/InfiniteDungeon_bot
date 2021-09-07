@@ -9,7 +9,7 @@ class Enemy:
         self.hp = hp
         self.dmg = random.randint(min_dmg, max_dmg+1)
         self.deffence = deffence
-        self.item = iitem
+        self.item = item
         self.drop_chance = drop_chance
 
     def drop(self,uid):
