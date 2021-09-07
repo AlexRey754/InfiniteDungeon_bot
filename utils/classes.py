@@ -1,4 +1,6 @@
 import random
+from utils.models import *
+from entity import player
 
 
 class Enemy:
@@ -39,12 +41,16 @@ class Armor(Item):
 
 
 class Achievement:
-    def __init__(self, name, description, reward) -> None:
+    def __init__(self, name, description, **kwargs) -> None:
         self.name = name
         self.description = description
-        self.reward = reward
+        self.reward = kwargs
 
     def get(self,uid):
-        pass
+        for column,value in self.reward.items():
+            if column = 'money':
+                player.add_money(uid,value)
+            else:
+                player.add_to_inv()
 
 

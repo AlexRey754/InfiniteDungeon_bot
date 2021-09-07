@@ -1,7 +1,8 @@
-from utils import db
+from utils import database
 
 def add(uid,name):
-    db.add_player(uid=uid,name=name)
+    """Add new player to db"""
+    database.add_player(uid=uid,name=name)
 
 def has(uid, item, table):
     pass
@@ -34,10 +35,10 @@ def get_debuff(uid):
     pass
 
 def add_to_inv(uid):
-    pass
+    database.inv_add()
 
 def add_rand_item_to_inv(uid,item_pool):
     pass
 
-def get_money(uid, count):
-    db.add_money(uid=uid, count=count)
+def add_money(uid, count):
+    database.add_money(uid=uid, count=count)

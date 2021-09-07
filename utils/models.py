@@ -43,3 +43,8 @@ class Equipment(BaseModel):
     hand = CharField()
 
 
+class Stats(BaseModel):
+    
+    min_dmg = IntegerField()
+    max_dmg = IntegerField()
+    deffence = IntegerField

@@ -15,6 +15,6 @@ def add_money(uid,count):
         end_money = curr_money + count
         querry = Player(money=end_money).where(Player.uid==uid).update()
 
-def inv_add(uid,item):
+def inv_add(uid,item,count):
     with db:
-        querry = Inventory(item==item).where(Inventory.uid==uid).save()
+        querry = Inventory(Inventory.name==item, Inventory.count==count).where(Inventory.uid==uid).save()
