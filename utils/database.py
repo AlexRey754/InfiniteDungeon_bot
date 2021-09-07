@@ -17,4 +17,4 @@ def add_money(uid,count):
 
 def inv_add(uid,item,count):
     with db:
-        querry = Inventory(Inventory.name==item, Inventory.count==count).where(Inventory.uid==uid).save()
+        querry = Inventory(Inventory.item==item, Inventory.count==count).where(Inventory.uid==uid).save()

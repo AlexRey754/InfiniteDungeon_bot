@@ -47,10 +47,10 @@ class Achievement:
         self.reward = kwargs
 
     def get(self,uid):
-        for column,value in self.reward.items():
-            if column = 'money':
-                player.add_money(uid,value)
+        for item,count in self.reward.items():
+            if item == 'money':
+                player.add_money(uid,count)
             else:
-                player.add_to_inv()
+                player.add_to_inv(uid=uid,item=item,count=count)
 
 

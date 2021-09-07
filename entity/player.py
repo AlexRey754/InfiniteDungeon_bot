@@ -34,8 +34,8 @@ def get_item(uid,item):
 def get_debuff(uid):
     pass
 
-def add_to_inv(uid):
-    database.inv_add()
+def add_to_inv(uid,item,count):
+    database.inv_add(uid,item,count)
 
 def add_rand_item_to_inv(uid,item_pool):
     pass
