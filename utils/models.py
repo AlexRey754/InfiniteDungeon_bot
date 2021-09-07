@@ -26,7 +26,7 @@ class Player(BaseModel):
 
 class Inventory(BaseModel):
 
-    name = CharField()
+    item = CharField()
     count = CharField()
     
 
@@ -44,7 +44,7 @@ class Equipment(BaseModel):
 
 
 class Stats(BaseModel):
-    
+
     min_dmg = IntegerField()
     max_dmg = IntegerField()
     deffence = IntegerField
